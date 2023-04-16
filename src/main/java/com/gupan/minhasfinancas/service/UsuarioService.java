@@ -1,5 +1,7 @@
 package com.gupan.minhasfinancas.service;
 
+import java.util.Optional;
+
 import com.gupan.minhasfinancas.model.entity.Usuario;
 
 public interface UsuarioService {
@@ -10,4 +12,5 @@ public interface UsuarioService {
 	
 	void validarEmail(String email);
 	
+	Optional<Usuario> obterPorId(Long id);
 }
