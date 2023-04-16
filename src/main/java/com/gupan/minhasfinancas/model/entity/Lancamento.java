@@ -61,7 +61,7 @@ public class Lancamento {
 	
 	@Column(name = "data_cadastro")
 	@Convert(converter = Jsr310JpaConverters.LocalDateConverter.class)
-	private LocalDate dataCadastro;
+	private LocalDate dataCadastro = LocalDate.now();
 	
 	@Column(name = "tipo")
 	@Enumerated(value = EnumType.STRING)
