@@ -21,6 +21,7 @@ import com.gupan.minhasfinancas.model.enums.StatusLancamento;
 import com.gupan.minhasfinancas.model.enums.TipoLancamento;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -33,6 +34,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
+@Builder
 
 @Entity
 @Table(name = "lancamento", schema = "financas")
