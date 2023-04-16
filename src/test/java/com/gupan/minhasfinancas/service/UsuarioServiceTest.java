@@ -67,6 +67,7 @@ public class UsuarioServiceTest {
 		org.assertj.core.api.Assertions.assertThat(result.getSenha()).isEqualTo(SENHA);
 	}
 	
+	
 	@Test
 	public void naoDeveSalvarUmUsuarioComEmailJaCadastrado() {
 		Assertions.assertThrows(RegraNegocioException.class, () -> {
